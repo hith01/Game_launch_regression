@@ -1,0 +1,66 @@
+//  const frames=page.frames();
+//  console.log("Totla frames",frames.length);
+//  frames.forEach((frame, index) => {
+//         console.log(`Frame ${index + 1}:`);
+//         console.log(`  Name: ${frame.name()}`);
+//         console.log(`  URL: ${frame.url()}`);
+//         console.log(`  ID: ${frame._id}`);
+//         console.log(`  Parent Frame: ${frame.parentFrame() ? frame.parentFrame().name() : 'None'}`);
+//       });
+
+
+
+//  // Wait for the iframe to be available
+//  console.log('Waiting for the iframe to be visible');
+//  const frame = await page.waitForSelector('iframe[src="https://www.qa.betsson.com/en/login"]', { timeout: 60000 });
+ 
+//  // Switch to the iframe
+//  const frameElement = await frame.contentFrame();
+
+//  // Wait for the frame to finish loading resources
+//  await frameElement.waitForLoadState('networkidle');
+
+//  // Wait for the username input field
+//  await frameElement.waitForSelector('input#mat-input-4');
+
+//  // Fill in the username and password
+//  await frameElement.fill('input#mat-input-4', 'testbetssoneur@betssongroup.com');
+//  await frameElement.fill('input#mat-input-5', 'Qwer1234');
+
+//  // Click the login button
+//  await frameElement.click('button[test-id="login-submit"]');
+
+//  // Wait for navigation after login
+//  await page.waitForNavigation();
+
+
+//   frames.forEach((frame, index) => {
+//     console.log(`Frame ${index + 1}:`);
+//     console.log(`  Name: ${frame.name()}`);
+//     console.log(`  URL: ${frame.url()}`);
+//     console.log(`  ID: ${frame._id}`);
+//     console.log(`  Parent Frame: ${frame.parentFrame() ? frame.parentFrame().name() : 'None'}`);
+//   });
+
+  //const iframe= await page.frame('easyXDM_default3228_provider');
+  //iframe.fill()
+
+
+
+ // await page.locator("//input[@id='mat-input-4']").type("testbetssoneur@betssongroup.com");
+ // await page.locator("//input[@id='mat-input-5']").type("Qwer1234");
+
+  // Click the login button
+ // await page.locator("//button[@test-id='login-submit']").click();
+
+  // Wait for navigation after login
+  //await page.waitForNavigation();
+
+  // Verify login was successful (e.g., check for a specific element on the home page)
+  //expect(await page.locator('#welcomeMessage').isVisible()).toBe(true); 
+
+  // Navigate to the game page or interact to launch the game
+  //await page.click('#launchGameButton'); 
+
+  // Verify the game launched successfully (e.g., check for a specific element in the game)
+  //expect(await page.locator('#gameCanvas').isVisible()).toBe(true); 
